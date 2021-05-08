@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct Article {
+struct Article: Identifiable {
+    let id = UUID()
     let title: String
     let bodyText: String
     let viewCount: Int
@@ -17,8 +18,8 @@ struct Article {
 struct ArticleList {
     
     static let articleList = [
-        Article(title: "“The Ultimate Guide to SwiftUI”",
-                bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est velit egestas dui id ornare. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Quam quisque id diam vel quam elementum pulvinar etiam. Molestie nunc non blandit massa enim nec dui. A diam sollicitudin tempor id. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Morbi tincidunt ornare massa eget egestas purus viverra. Eget lorem dolor sed viverra. Sapien et ligula ullamcorper malesuada proin libero. Eget nunc scelerisque viverra mauris in aliquam sem. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Scelerisque eleifend donec pretium vulputate. Quis imperdiet massa tincidunt nunc pulvinar sapien et.",
+        Article(title: "The Ultimate Guide to SwiftUI",
+                bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est velit egestas dui id ornare. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Quam quisque id diam vel quam elementum pulvinar etiam. ",
                 viewCount: 21,
                 publishDate: "May 5, 2021"),
         

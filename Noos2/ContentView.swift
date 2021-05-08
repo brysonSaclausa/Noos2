@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var articles: [Article] = ArticleList.articleList
+    
     var body: some View {
         NavigationView {
-            List(0 ..< 15) { item in
+            List(articles, id: \.id) { article in
                 Image("breaking")
                     .resizable()
                     .scaledToFit()
@@ -18,19 +21,19 @@ struct ContentView: View {
                     .cornerRadius(10)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("The NOOS App First Article")
+                    Text(article.title)
                         .fontWeight(.semibold)
                         .lineLimit(2)
                         .minimumScaleFactor(0.5)
                     
-                    Text("June 4, 1987")
+                    Text(article.publishDate)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
                 
                 
             }
-            .navigationTitle("Newsfeed")
+            .navigationTitle("Noosfeed")
         }
         
     }
