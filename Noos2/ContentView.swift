@@ -14,22 +14,27 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(articles, id: \.id) { article in
-                Image("breaking")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height:70)
-                    .cornerRadius(10)
+                NavigationLink(
+                    destination: ArticleDetailView(article: article),
+                    label: {
+                        Image("breaking")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height:70)
+                            .cornerRadius(10)
+                        
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(article.title)
+                                .fontWeight(.semibold)
+                                .lineLimit(2)
+                                .minimumScaleFactor(0.5)
+                            
+                            Text(article.publishDate)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                    })
                 
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(article.title)
-                        .fontWeight(.semibold)
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.5)
-                    
-                    Text(article.publishDate)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
                 
                 
             }

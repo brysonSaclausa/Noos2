@@ -12,7 +12,9 @@ struct ArticleDetailView: View {
     var article: Article
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
+            Spacer()
+            
             Image("breaking")
                 .resizable()
                 .scaledToFit()
@@ -26,11 +28,11 @@ struct ArticleDetailView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             
-            HStack {
+            HStack(spacing: 40) {
                 Label("\(article.viewCount)", systemImage: "eye.fill")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-                
+               
                 Text(article.publishDate)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
@@ -38,6 +40,8 @@ struct ArticleDetailView: View {
             Text(article.bodyText)
                 .font(.body)
                 .padding()
+            
+            Spacer()
             
         }
     }
