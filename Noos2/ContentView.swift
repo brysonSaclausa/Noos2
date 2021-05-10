@@ -17,32 +17,39 @@ struct ContentView: View {
                 NavigationLink(
                     destination: ArticleDetailView(article: article),
                     label: {
-                        Image("breaking")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height:70)
-                            .cornerRadius(10)
-                        
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(article.title)
-                                .fontWeight(.semibold)
-                                .lineLimit(2)
-                                .minimumScaleFactor(0.5)
-                            
-                            Text(article.publishDate)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                        }
+                        articleCell(article: article)
                     })
-                
-                
-                
             }
             .navigationTitle("Noosfeed")
         }
         
     }
-}
+}//
+
+struct articleCell: View {
+    var article: Article
+    
+    var body: some View {
+        HStack {
+            Image("breaking")
+                .resizable()
+                .scaledToFit()
+                .frame(height:70)
+                .cornerRadius(10)
+            
+            VStack(alignment: .leading, spacing: 4) {
+                Text(article.title)
+                    .fontWeight(.semibold)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.5)
+                
+                Text(article.publishDate)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+        }
+    }
+}//
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
