@@ -21,7 +21,7 @@ struct ContentView: View {
                     })
             }
             .navigationTitle("Noosfeed")
-        }
+        } //.environment(\.defaultMinListRowHeight, 2)
         
     }
 }//
@@ -37,17 +37,17 @@ struct articleCell: View {
                 .frame(height:70)
                 .cornerRadius(10)
             
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(article.title)
-                    .fontWeight(.semibold)
+                    .fontWeight(.regular)
                     .lineLimit(2)
-                    .minimumScaleFactor(0.5)
+                    .minimumScaleFactor(0.1)
                 
                 Text(article.publishDate)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-        }
+        } .frame(width: 350, height: 70, alignment: .leading)
     }
 }//
 
