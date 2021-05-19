@@ -21,6 +21,7 @@ struct ContentView: View {
                     })
             }
             .navigationTitle("Noosfeed")
+            
         } //.environment(\.defaultMinListRowHeight, 2)
         
     }
