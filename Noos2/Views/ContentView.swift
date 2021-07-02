@@ -35,7 +35,7 @@ struct articleCell: View {
             Image("breaking")
                 .resizable()
                 .scaledToFit()
-                .frame(height:70)
+                .frame(height:80)
                 .cornerRadius(10)
             
             VStack(alignment: .leading, spacing: 2) {
