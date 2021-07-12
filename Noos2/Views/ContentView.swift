@@ -22,7 +22,7 @@ struct ContentView: View {
             }
             .navigationTitle("Noosfeed")
             
-        } //.environment(\.defaultMinListRowHeight, 2)
+        } .environment(\.defaultMinListRowHeight, 2)
         
     }
 }//
@@ -35,7 +35,7 @@ struct articleCell: View {
             Image("breaking")
                 .resizable()
                 .scaledToFit()
-                .frame(height:80)
+                .frame(height:70)
                 .cornerRadius(10)
             
             VStack(alignment: .leading, spacing: 2) {
