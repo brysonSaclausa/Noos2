@@ -80,6 +80,15 @@ struct ArticleDetailView: View {
                     .font(.custom("Avenir Next", size: 28))
                     .fontWeight(.semibold)
                 
+                Link(destination: URL(string: "https://www.google.com")!, label: {
+                    Label(
+                        title: {
+                            Text("HERE")
+                        },
+                        icon: { Image(systemName: "circle") }
+)
+                })
+                
                 Text(article.bodyText)
                     .lineLimit(nil)
                     .font(.custom("Avenir Next", size: 17))
