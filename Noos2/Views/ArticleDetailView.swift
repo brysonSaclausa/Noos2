@@ -76,28 +76,10 @@ struct ArticleDetailView: View {
                     .font(.custom("Avenir Next", size: 12))
                     .foregroundColor(.gray)
                 
-                Text(article.title)
-                    .font(.custom("Avenir Next", size: 28))
-                    .fontWeight(.semibold)
-                
-                Link(destination: URL(string: "https://www.google.com")!, label: {
-                    Label(
-                        title: {
-                            Text("HERE")
-                        },
-                        icon: { Image(systemName: "circle") }
-)
-                })
-                
-                Text(article.bodyText)
-                    .lineLimit(nil)
-                    .font(.custom("Avenir Next", size: 17))
+                ExtractedView(article: article)
                     
             }.padding(.horizontal)
         }
-        
-        
-        
         
     }
     
@@ -106,5 +88,30 @@ struct ArticleDetailView: View {
 struct ArticleDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ArticleDetailView(article: ArticleList.articleList.first!)
+    }
+}
+
+struct ExtractedView: View {
+    var article: Article
+    
+    var body: some View {
+        VStack {
+            Text(article.title)
+                .font(.custom("Avenir Next", size: 28))
+                .fontWeight(.semibold)
+            
+            //                Link(destination: URL(string: "https://www.google.com")!, label: {
+            //                    Label(
+            //                        title: {
+            //                            Text("HERE")
+            //                        },
+            //                        icon: { Image(systemName: "circle") }
+            //)
+            //                })
+            
+            Text(article.bodyText)
+                .lineLimit(nil)
+                .font(.custom("Avenir Next", size: 17))
+        }
     }
 }
