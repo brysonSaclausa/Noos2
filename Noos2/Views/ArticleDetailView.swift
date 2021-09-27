@@ -76,7 +76,7 @@ struct ArticleDetailView: View {
                     .font(.custom("Avenir Next", size: 12))
                     .foregroundColor(.gray)
                 
-                ExtractedView(article: article)
+                ArticleListView(article: article)
                     
             }.padding(.horizontal)
         }
@@ -91,7 +91,7 @@ struct ArticleDetailView_Previews: PreviewProvider {
     }
 }
 
-struct ExtractedView: View {
+struct ArticleListView: View {
     var article: Article
     
     var body: some View {

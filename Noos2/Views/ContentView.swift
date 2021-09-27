@@ -13,14 +13,17 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(articles, id: \.id) { article in
-                NavigationLink(
-                    destination: ArticleDetailView(article: article),
-                    label: {
-                        articleCell(article: article)
-                    })
+            
+            TabView {
+                ArticleListViewMain()
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("feed")
+                    }
+                
             }
             .navigationTitle("Noosfeed")
+            .navigationBarItems(trailing: Image(systemName: "person"))
             
         } .environment(\.defaultMinListRowHeight, 2)
         
@@ -55,5 +58,19 @@ struct articleCell: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ArticleListViewMain: View {
+    var articles: [Article] = ArticleList.articleList
+    var body: some View {
+        List(articles, id: \.id) { article in
+            NavigationLink(
+                destination: ArticleDetailView(article: article),
+                label: {
+                    articleCell(article: article)
+                })
+            
+        }
     }
 }
