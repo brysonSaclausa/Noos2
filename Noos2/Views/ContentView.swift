@@ -24,6 +24,7 @@ struct ContentView: View {
             }
             .navigationTitle("Noosfeed")
             .navigationBarItems(trailing: Image(systemName: "person"))
+            .navigationBarItems(leading: Image(systemName: "circle"))
             
         } .environment(\.defaultMinListRowHeight, 2)
         
