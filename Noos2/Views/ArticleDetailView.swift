@@ -67,7 +67,7 @@ struct ArticleDetailView: View {
                         Text("Authors Name")
                             .font(.custom("Avenir Next", size: 17))
                     }
-                    .padding()
+//                    .padding()
                     .padding(.top, 16.0)
                     
                 }.edgesIgnoringSafeArea(.all)

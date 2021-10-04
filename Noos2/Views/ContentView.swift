@@ -15,11 +15,14 @@ struct ContentView: View {
         NavigationView {
             
             TabView {
+                featuredListView()
                 ArticleListViewMain()
                     .tabItem {
                         Image(systemName: "house")
                         Text("feed")
                     }
+                
+                
                 
             }
             .navigationTitle("Noosfeed")
@@ -62,9 +65,16 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+struct featuredListView: View {
+    var body: some View {
+        Text("Hello")
+    }
+}
+
 struct ArticleListViewMain: View {
     var articles: [Article] = ArticleList.articleList
     var body: some View {
+//        featuredListView()
         List(articles, id: \.id) { article in
             NavigationLink(
                 destination: ArticleDetailView(article: article),
