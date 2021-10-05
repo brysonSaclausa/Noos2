@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationView {
             
             TabView {
-                featuredListView()
+//                featuredListView()
                 ArticleListViewMain()
                     .tabItem {
                         Image(systemName: "house")
@@ -83,5 +83,8 @@ struct ArticleListViewMain: View {
                 })
             
         }
+//        ScrollView(.vertical) {
+//
+//        }
     }
 }

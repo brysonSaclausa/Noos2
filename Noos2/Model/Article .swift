@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Article: Identifiable {
+struct Article: Identifiable, Hashable {
     let id = UUID()
     let title: String
     let bodyText: String
@@ -93,11 +93,3 @@ struct ArticleList {
     
     ]
 }
-
-/*
- Title    String
- Author    String
- PublishDate    Date()/String
- Body Text    String
- Image(s) URL
- */
