@@ -15,15 +15,23 @@ struct ContentView: View {
         NavigationView {
             
             TabView {
-//                featuredListView()
+                
                 ArticleListViewMain()
                     .tabItem {
                         Image(systemName: "house")
-                        Text("feed")
+                        Text("Home")
                     }
                 
-                
-                
+                FeaturedListView()
+                    .tabItem {
+                        Image(systemName: "circle")
+                        Text("Circle")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
             }
             .navigationTitle("Noosfeed")
             .navigationBarItems(trailing: Image(systemName: "person"))
@@ -65,26 +73,38 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct featuredListView: View {
+struct FeaturedListView: View {
     var body: some View {
         Text("Hello")
+    }
+}
+
+struct ProfileView: View {
+    var body: some View {
+        Text("Pro")
     }
 }
 
 struct ArticleListViewMain: View {
     var articles: [Article] = ArticleList.articleList
     var body: some View {
-//        featuredListView()
-        List(articles, id: \.id) { article in
-            NavigationLink(
-                destination: ArticleDetailView(article: article),
-                label: {
-                    articleCell(article: article)
-                })
+        VStack {
+            ZStack {
+                Color.red
+                    .frame(width: 350, height: 30, alignment: .center)
+                Text("HI")
+            }
             
+            List(articles, id: \.id) { article in
+                NavigationLink(
+                    destination: ArticleDetailView(article: article),
+                    label: {
+                        articleCell(article: article)
+                    })
+                
+            }
         }
-//        ScrollView(.vertical) {
-//
-//        }
+        
+        
     }
 }

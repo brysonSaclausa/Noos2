@@ -71,12 +71,12 @@
 			children = (
 				7CA260E9263CA11E00494776 /* AppDelegate.swift */,
 				7CA260EB263CA11E00494776 /* SceneDelegate.swift */,
+				7CF623C9263E5913007CE865 /* Model */,
 				7C0615F3264C62DD0068076D /* Views */,
 				7CA260EF263CA11F00494776 /* Assets.xcassets */,
 				7CA260F4263CA11F00494776 /* LaunchScreen.storyboard */,
 				7CA260F7263CA11F00494776 /* Info.plist */,
 				7CA260F1263CA11F00494776 /* Preview Content */,
-				7CF623C9263E5913007CE865 /* Model */,
 			);
 			path = Noos2;
 			sourceTree = "<group>";

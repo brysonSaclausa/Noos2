@@ -12,11 +12,10 @@ struct ArticleDetailView: View {
     var article: Article
     
     private func getScrollOffset(_ geometry: GeometryProxy) -> CGFloat {
-            geometry.frame(in: .global).minY
-        }
+        geometry.frame(in: .global).minY
+    }
     
     
-        
     private func getOffsetForHeaderImage(_ geometry: GeometryProxy) -> CGFloat {
         let offset = getScrollOffset(geometry)
         
@@ -31,24 +30,24 @@ struct ArticleDetailView: View {
     private func getHeightForHeaderImage(_ geometry: GeometryProxy) -> CGFloat {
         let offset = getScrollOffset(geometry)
         let imageHeight = geometry.size.height
-
+        
         if offset > 0 {
             return imageHeight + offset
         }
-
+        
         return imageHeight
     }
     
     var body: some View {
         ScrollView {
             GeometryReader { geometry in
-                    Image("breaking")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geometry.size.width, height: self.getHeightForHeaderImage(geometry))
-                        .clipped()
-                        .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
-                }.frame(height: 175)
+                Image("breaking")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: self.getHeightForHeaderImage(geometry))
+                    .clipped()
+                    .offset(x: 0, y: self.getOffsetForHeaderImage(geometry))
+            }.frame(height: 175)
             
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
@@ -67,17 +66,17 @@ struct ArticleDetailView: View {
                         Text("Authors Name")
                             .font(.custom("Avenir Next", size: 17))
                     }
-//                    .padding()
+                    //                    .padding()
                     .padding(.top, 16.0)
                     
                 }.edgesIgnoringSafeArea(.all)
-
+                
                 Text(article.publishDate)
                     .font(.custom("Avenir Next", size: 12))
                     .foregroundColor(.gray)
                 
                 ArticleListView(article: article)
-                    
+                
             }.padding(.horizontal)
         }
         
@@ -97,17 +96,10 @@ struct ArticleListView: View {
     var body: some View {
         VStack {
             Text(article.title)
+                .frame(width: 350, height: nil, alignment: .leading)
                 .font(.custom("Avenir Next", size: 28))
-                .fontWeight(.semibold)
+//                .fontWeight(.semibold)
             
-            //                Link(destination: URL(string: "https://www.google.com")!, label: {
-            //                    Label(
-            //                        title: {
-            //                            Text("HERE")
-            //                        },
-            //                        icon: { Image(systemName: "circle") }
-            //)
-            //                })
             
             Text(article.bodyText)
                 .lineLimit(nil)
