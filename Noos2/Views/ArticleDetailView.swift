@@ -69,7 +69,8 @@ struct ArticleDetailView: View {
                     //                    .padding()
                     .padding(.top, 16.0)
                     
-                }.edgesIgnoringSafeArea(.all)
+                }
+                .edgesIgnoringSafeArea(.all)
                 
                 Text(article.publishDate)
                     .font(.custom("Avenir Next", size: 12))

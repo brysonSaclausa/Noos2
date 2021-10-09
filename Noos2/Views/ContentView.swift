@@ -13,7 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
             TabView {
                 
                 ArticleListViewMain()
@@ -21,8 +20,8 @@ struct ContentView: View {
                         Image(systemName: "house")
                         Text("Home")
                     }
-                
-                FeaturedListView()
+          
+                EventMapView()
                     .tabItem {
                         Image(systemName: "circle")
                         Text("Circle")
@@ -33,39 +32,18 @@ struct ContentView: View {
                         Text("Profile")
                     }
             }
-            .navigationTitle("Noosfeed")
+            .navigationTitle("Noos")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
-            .navigationBarItems(leading: Image(systemName: "circle"))
+//            .navigationBarItems(leading: Image(systemName: "circle"))
             
-        } .environment(\.defaultMinListRowHeight, 2)
+        }
+            
         
     }
 }//
 
-struct articleCell: View {
-    var article: Article
-    
-    var body: some View {
-        HStack {
-            Image("breaking")
-                .resizable()
-                .scaledToFit()
-                .frame(height:70)
-                .cornerRadius(10)
-            
-            VStack(alignment: .leading, spacing: 2) {
-                Text(article.title)
-                    .fontWeight(.regular)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.1)
-                
-                Text(article.publishDate)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-        } .frame(width: 350, height: 70, alignment: .leading)
-    }
-}//
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -89,17 +67,17 @@ struct ArticleListViewMain: View {
     var articles: [Article] = ArticleList.articleList
     var body: some View {
         VStack {
-            ZStack {
-                Color.red
-                    .frame(width: 350, height: 30, alignment: .center)
-                Text("HI")
-            }
+//            ZStack {
+//                Color.red
+//                    .frame(width: 350, height: 30, alignment: .center)
+//                Text("HI")
+//            }
             
             List(articles, id: \.id) { article in
                 NavigationLink(
                     destination: ArticleDetailView(article: article),
                     label: {
-                        articleCell(article: article)
+                        HomeArticleCell(article: article)
                     })
                 
             }
