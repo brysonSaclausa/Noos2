@@ -9,41 +9,52 @@ import SwiftUI
 
 struct TopHeaderView: View {
     var body: some View {
-        VStack(alignment: .center) {
-            Image("break3")
-                .resizable()
-                .cornerRadius(10)
-                .frame(width: 280, height: 150, alignment: .center)
-            
-            Text("This is a subtitle for the top header page,This is a subtitle for the top header")
-            
-            HStack {
-                VStack(alignment: .center) {
-                    Image("break1")
+        VStack(alignment: .leading) {
+
+            Text("Featured")
+                .font(.subheadline)
+
+            VStack() {
+                VStack {
+                    Image("break3")
                         .resizable()
-                        .frame(width: 120, height: 90)
                         .cornerRadius(10)
-                    Text("This is a subtitle for the top header page")
-                        .font(.caption)
-                        .lineLimit(2)
-//                        Spacer()
-//                        .padding()
-                }
-//                Spacer()
-                VStack(alignment: .center) {
-                    Image("break2")
-                        .resizable()
                         .scaledToFill()
-                        .frame(width: 120, height: 90)
-                        .cornerRadius(10)
-                    Text("This is a subtitle for the top header page")
-                        .font(.caption)
-                        .multilineTextAlignment(.center)
-//                        Spacer()
+                        .frame(width: 300, height: 150)
+                    Text("This is a subtitle for the top header page,This is a subtitle for the top header")
+                        .lineLimit(3)
+                        .frame(width: 300, height: 70)
+                        .offset(y: 0)
+                }
+                Divider()
+                HStack(spacing: 45) {
+                    VStack() {
+                        Image("break1")
+                            .resizable()
+                            .frame(width: 120, height: 90)
+                            .cornerRadius(10)
+                        Text("This is a subtitle for the top header page")
+                            .font(.caption)
+                            .lineLimit(2)
+                            .frame(width: 120, height: 60)
+                            .offset(y: -15)
+
+                    }
+                    
+                    VStack() {
+                        Image("break2")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 90)
+                            .cornerRadius(10)
+                        Text("This is a subtitle for the top header page")
+                            .font(.caption)
+                            .frame(width: 120, height: 60)
+                            .offset(y: -15)
+
+                    }
                 }
             }
-            Spacer()
-            
         }
     }
 }

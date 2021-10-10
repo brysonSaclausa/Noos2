@@ -16,11 +16,7 @@ struct HomeListArticleView: View {
         
         Form {
             TopHeaderView()
-//            .frame(alignment: .center)
             
-//            Divider()
-        
-        
             List(articles, id: \.id) { article in
                 NavigationLink(
                     destination: ArticleDetailView(article: article),
