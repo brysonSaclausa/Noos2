@@ -12,10 +12,10 @@ struct HomeArticleCell: View {
     
     var body: some View {
         HStack {
-            Image("breaking")
+            Image("\(article.image)")
                 .resizable()
-                .scaledToFit()
-                .frame(height:70)
+                .scaledToFill()
+                .frame(width:70, height:70)
                 .cornerRadius(10)
             
             VStack(alignment: .leading, spacing: 2) {
@@ -34,7 +34,7 @@ struct HomeArticleCell: View {
 
 struct HomeArticleCell_Previews: PreviewProvider {
     static var previews: some View {
-        let article = Article(title: "", bodyText: "", viewCount: 2, publishDate: "", authorName: "")
+        let article = Article(title: "", bodyText: "", viewCount: 2, publishDate: "", authorName: "", category: "", image: "")
         HomeArticleCell(article: article)
     }
 }

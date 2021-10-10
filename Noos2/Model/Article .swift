@@ -14,7 +14,8 @@ struct Article: Identifiable, Hashable {
     let viewCount: Int
     let publishDate: String
     let authorName: String
-//    let authorImage:
+    let category: String
+    let image: String
     
 }
 
@@ -25,61 +26,71 @@ struct ArticleList {
                 bodyText: loremIpsum,
                 viewCount: 21,
                 publishDate: "May 5, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break4"),
         
         Article(title: "Every iOS Developer Regrets Not Doing This Sooner",
                 bodyText: loremIpsum2,
                 viewCount: 48659,
                 publishDate: "May 6, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break5"),
         
         Article(title: "The Ultimate Guide to SwiftUI",
                 bodyText: loremIpsum,
                 viewCount: 21,
                 publishDate: "May 5, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break6"),
         
         Article(title: "Every iOS Developer Regrets Not Doing This Sooner",
                 bodyText: "Quisque non tellus orci ac auctor augue mauris. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Aliquam sem et tortor consequat id porta. Turpis cursus in hac habitasse. Arcu bibendum at varius vel Hello World vel turpis nunc. Id velit ut tortor pretium viverra. Quisque non tellus orci ac auctor augue mauris augue. Diam in arcu cursus euismod quis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Venenatis a condimentum vitae sapien. Et molestie ac feugiat sed lectus vestibulum mattis. Elementum nibh tellus molestie nunc non blandit. Sagittis aliquam malesuada bibendum arcu. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Rhoncus dolor purus non enim praesent. Elementum facilisis leo vel fringilla est ullamcorper. Lacus laoreet non curabitur gravida arcu ac.",
                 viewCount: 48659,
                 publishDate: "May 6, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break7"),
         
         Article(title: "The Ultimate Guide to SwiftUI",
                 bodyText: loremIpsum,
                 viewCount: 21,
                 publishDate: "May 5, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break8"),
         
         Article(title: "Every iOS Developer Regrets Not Doing This Sooner",
                 bodyText: "Quisque non tellus orci ac auctor augue mauris. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Aliquam sem et tortor consequat id porta. Turpis cursus in hac habitasse. Arcu bibendum at varius vel Hello World vel turpis nunc. Id velit ut tortor pretium viverra. Quisque non tellus orci ac auctor augue mauris augue. Diam in arcu cursus euismod quis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Venenatis a condimentum vitae sapien. Et molestie ac feugiat sed lectus vestibulum mattis. Elementum nibh tellus molestie nunc non blandit. Sagittis aliquam malesuada bibendum arcu. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Rhoncus dolor purus non enim praesent. Elementum facilisis leo vel fringilla est ullamcorper. Lacus laoreet non curabitur gravida arcu ac.",
                 viewCount: 48659,
                 publishDate: "May 6, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break9"),
         
         Article(title: "The Ultimate Guide to SwiftUI",
                 bodyText: loremIpsum,
                 viewCount: 21,
                 publishDate: "May 5, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break2"),
         
         Article(title: "Every iOS Developer Regrets Not Doing This Sooner",
                 bodyText: "Quisque non tellus orci ac auctor augue mauris. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Aliquam sem et tortor consequat id porta. Turpis cursus in hac habitasse. Arcu bibendum at varius vel Hello World vel turpis nunc. Id velit ut tortor pretium viverra. Quisque non tellus orci ac auctor augue mauris augue. Diam in arcu cursus euismod quis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Venenatis a condimentum vitae sapien. Et molestie ac feugiat sed lectus vestibulum mattis. Elementum nibh tellus molestie nunc non blandit. Sagittis aliquam malesuada bibendum arcu. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Rhoncus dolor purus non enim praesent. Elementum facilisis leo vel fringilla est ullamcorper. Lacus laoreet non curabitur gravida arcu ac.",
                 viewCount: 48659,
                 publishDate: "May 6, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break 4"),
         
         Article(title: "The Ultimate Guide to SwiftUI",
                 bodyText: loremIpsum,
                 viewCount: 21,
                 publishDate: "May 5, 2021",
-                authorName: "Admin"),
+                authorName: "Admin",
+                category: "Event", image: "break8"),
         
         Article(title: "Every iOS Developer Regrets Not Doing This Sooner",
                 bodyText: "Quisque non tellus orci ac auctor augue mauris. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Aliquam sem et tortor consequat id porta. Turpis cursus in hac habitasse. Arcu bibendum at varius vel Hello World vel turpis nunc. Id velit ut tortor pretium viverra. Quisque non tellus orci ac auctor augue mauris augue. Diam in arcu cursus euismod quis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Venenatis a condimentum vitae sapien. Et molestie ac feugiat sed lectus vestibulum mattis. Elementum nibh tellus molestie nunc non blandit. Sagittis aliquam malesuada bibendum arcu. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Rhoncus dolor purus non enim praesent. Elementum facilisis leo vel fringilla est ullamcorper. Lacus laoreet non curabitur gravida arcu ac.",
                 viewCount: 48659,
                 publishDate: "May 6, 2021",
-                authorName: "Admin")
+                authorName: "Admin",
+                category: "Event", image: "break9")
     
     ]
 }

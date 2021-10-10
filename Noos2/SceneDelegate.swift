@@ -11,7 +11,7 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let article = Article(title: "article001", bodyText: "article001", viewCount: 2, publishDate: "article001", authorName: "article001")
+    let article = Article(title: "article001", bodyText: "article001", viewCount: 2, publishDate: "article001", authorName: "article001", category: "", image: "")
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

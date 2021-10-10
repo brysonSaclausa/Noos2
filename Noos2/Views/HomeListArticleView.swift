@@ -9,23 +9,30 @@ import SwiftUI
 
 struct HomeListArticleView: View {
     var articles: [Article] = ArticleList.articleList
+    
     var body: some View {
-        VStack {
-//            ZStack {
-//                Color.red
-//                    .frame(width: 350, height: 30, alignment: .center)
-//                Text("HI")
-//            }
+       
             
+        
+        Form {
+            TopHeaderView()
+//            .frame(alignment: .center)
+            
+//            Divider()
+        
+        
             List(articles, id: \.id) { article in
                 NavigationLink(
                     destination: ArticleDetailView(article: article),
                     label: {
                         HomeArticleCell(article: article)
                     })
-                
             }
         }
+                
+            
+            
+        
         
         
     }
@@ -36,29 +43,3 @@ struct HomeListArticleView_Previews: PreviewProvider {
         HomeListArticleView()
     }
 }
-
-/*
- struct HomeListArticleView: View {
-     var articles: [Article] = ArticleList.articleList
-     var body: some View {
-         VStack {
-             ZStack {
-                 Color.red
-                     .frame(width: 350, height: 30, alignment: .center)
-                 Text("HI")
-             }
-             
-             List(articles, id: \.id) { article in
-                 NavigationLink(
-                     destination: ArticleDetailView(article: article),
-                     label: {
-                         articleCell(article: article)
-                     })
-                 
-             }
-         }
-         
-         
-     }
- }
- */
