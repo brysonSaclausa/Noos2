@@ -10,10 +10,8 @@ import SwiftUI
 struct TopHeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
-
             Text("Featured")
-                .font(.subheadline)
-
+                .font(.headline)
             VStack() {
                 VStack {
                     Image("break3")

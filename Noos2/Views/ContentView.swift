@@ -13,32 +13,29 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            TabView {
-                
-                HomeListArticleView()
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("Home")
-                    }
-                CategoryPageView()
-                    .tabItem {
-                        Image(systemName: "list.star")
-                        Text("Category")
-                    }
-                EventMapView()
-                    .tabItem {
-                        Image(systemName: "map")
-                        Text("Circle")
-                    }
-                
+            VStack {
+                TabView {
+                    HomeListArticleView()
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("Home")
+                        }
+                    CategoryPageView()
+                        .tabItem {
+                            Image(systemName: "list.star")
+                            Text("Category")
+                        }
+                    EventMapView()
+                        .tabItem {
+                            Image(systemName: "map")
+                            Text("Events")
+                        }
+                 }
             }
             .navigationTitle("Noos")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
-            
         }
-            
-        
     }
 }//
 

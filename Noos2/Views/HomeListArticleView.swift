@@ -8,30 +8,15 @@
 import SwiftUI
 
 struct HomeListArticleView: View {
-    var articles: [Article] = ArticleList.articleList
     
     var body: some View {
-       
-            
-        
-        Form {
-            TopHeaderView()
-            
-            List(articles, id: \.id) { article in
-                NavigationLink(
-                    destination: ArticleDetailView(article: article),
-                    label: {
-                        HomeArticleCell(article: article)
-                    })
+        VStack {
+            Form() {
+                TopHeaderView()
+                ArticleListView1()
             }
         }
-                
-            
-            
-        
-        
-        
-    }
+     }
 }
 
 struct HomeListArticleView_Previews: PreviewProvider {
