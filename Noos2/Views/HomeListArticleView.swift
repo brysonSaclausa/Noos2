@@ -16,7 +16,7 @@ struct HomeListArticleView: View {
                 ArticleListView1()
             }
         }
-     }
+    }
 }
 
 struct HomeListArticleView_Previews: PreviewProvider {

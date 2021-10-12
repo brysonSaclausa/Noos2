@@ -22,6 +22,7 @@
 		7CDBED1227125B8D00ADE785 /* TopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBED1127125B8D00ADE785 /* TopHeaderView.swift */; };
 		7CDBED142712A17E00ADE785 /* SectionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBED132712A17E00ADE785 /* SectionBarView.swift */; };
 		7CDBED162712B0E200ADE785 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBED152712B0E200ADE785 /* ArticleListView.swift */; };
+		7CDBED182712B69800ADE785 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBED172712B69800ADE785 /* ShopView.swift */; };
 		7CF623C8263E58BD007CE865 /* Article .swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF623C7263E58BD007CE865 /* Article .swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		7CDBED1127125B8D00ADE785 /* TopHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeaderView.swift; sourceTree = "<group>"; };
 		7CDBED132712A17E00ADE785 /* SectionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBarView.swift; sourceTree = "<group>"; };
 		7CDBED152712B0E200ADE785 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		7CDBED172712B69800ADE785 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		7CF623C7263E58BD007CE865 /* Article .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				7CDBED132712A17E00ADE785 /* SectionBarView.swift */,
 				7CDBED0F2712559800ADE785 /* CategoryPageView.swift */,
 				7CDBED092711549600ADE785 /* EventMapView.swift */,
+				7CDBED172712B69800ADE785 /* ShopView.swift */,
 				7CDBED1127125B8D00ADE785 /* TopHeaderView.swift */,
 				7CDBED0B2711596F00ADE785 /* HomeArticleCell.swift */,
 				7C22ED1A26472D95003D8014 /* ArticleDetailView.swift */,
@@ -193,6 +196,7 @@
 			files = (
 				7CDBED142712A17E00ADE785 /* SectionBarView.swift in Sources */,
 				7CDBED0A2711549600ADE785 /* EventMapView.swift in Sources */,
+				7CDBED182712B69800ADE785 /* ShopView.swift in Sources */,
 				7CDBED082711528600ADE785 /* HomeListArticleView.swift in Sources */,
 				7CDBED06271095D300ADE785 /* FeedCell .swift in Sources */,
 				7CA260EA263CA11E00494776 /* AppDelegate.swift in Sources */,

@@ -23,18 +23,24 @@ struct ContentView: View {
                     CategoryPageView()
                         .tabItem {
                             Image(systemName: "list.star")
-                            Text("Category")
+                            Text("Categories")
                         }
                     EventMapView()
                         .tabItem {
                             Image(systemName: "map")
                             Text("Events")
                         }
+                    ShopView()
+                        .tabItem {
+                            Image(systemName: "bag")
+                            Text("Shop")
+                        }
                  }
             }
             .navigationTitle("Noos")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
+
         }
     }
 }//
