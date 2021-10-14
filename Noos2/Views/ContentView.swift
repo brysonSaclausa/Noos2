@@ -38,7 +38,7 @@ struct ContentView: View {
                  }
             }
             .navigationTitle("Noos")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
 
         }
