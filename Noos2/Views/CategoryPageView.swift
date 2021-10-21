@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryPageView: View {
     var body: some View {
-        Text("Pro")
+        Text("List Of Categories")
     }
 }
 
