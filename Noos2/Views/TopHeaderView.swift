@@ -10,31 +10,32 @@ import SwiftUI
 struct TopHeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Featured")
-                .font(.headline)
+//            Text("Featured")
+//                .font(.title)
+//                .padding()
             VStack() {
                 VStack {
-                    Image("break3")
+                    Image("break1")
                         .resizable()
-                        .cornerRadius(10)
+//                        .cornerRadius(10)
                         .scaledToFill()
-                        .frame(width: 300, height: 150)
-                    Text("This is a subtitle for the top header page,This is a subtitle for the top header")
+                        .frame(width: .none, height: 100)
+                    Text("This is a subtitle for the top header page")
                         .lineLimit(3)
-                        .frame(width: 300, height: 70)
-                        .offset(y: 0)
+                        .frame(width: 330, height: 70)
+                        .offset(y: 10)
                 }
                 Divider()
                 HStack(spacing: 45) {
                     VStack() {
-                        Image("break1")
+                        Image("break3")
                             .resizable()
                             .frame(width: 120, height: 90)
                             .cornerRadius(10)
                         Text("This is a subtitle for the top header page")
                             .font(.caption)
                             .lineLimit(2)
-                            .frame(width: 120, height: 60)
+                            .frame(width: 115, height: 60)
                             .offset(y: -15)
 
                     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C22ED1B26472D95003D8014 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C22ED1A26472D95003D8014 /* ArticleDetailView.swift */; };
+		7C40C2F227E3064E0045A79E /* EventScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40C2F127E3064E0045A79E /* EventScrollView.swift */; };
+		7C575BBC27B0E99400C5BC11 /* ArticleCardViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */; };
 		7CA260EA263CA11E00494776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA260E9263CA11E00494776 /* AppDelegate.swift */; };
 		7CA260EC263CA11E00494776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA260EB263CA11E00494776 /* SceneDelegate.swift */; };
 		7CA260EE263CA11E00494776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA260ED263CA11E00494776 /* ContentView.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		7C22ED1A26472D95003D8014 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		7C40C2F127E3064E0045A79E /* EventScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScrollView.swift; sourceTree = "<group>"; };
+		7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCardViewBasic.swift; sourceTree = "<group>"; };
 		7CA260E6263CA11E00494776 /* Noos2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noos2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA260E9263CA11E00494776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA260EB263CA11E00494776 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			children = (
 				7CA260ED263CA11E00494776 /* ContentView.swift */,
 				7CDBED072711528600ADE785 /* HomeListArticleView.swift */,
+				7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */,
 				7CDBED152712B0E200ADE785 /* ArticleListView.swift */,
 				7CDBED132712A17E00ADE785 /* SectionBarView.swift */,
 				7CDBED0F2712559800ADE785 /* CategoryPageView.swift */,
@@ -75,6 +80,14 @@
 				7CDBED05271095D300ADE785 /* FeedCell .swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7C40C2F027E305B30045A79E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7C40C2F127E3064E0045A79E /* EventScrollView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		7CA260DD263CA11E00494776 = {
@@ -100,6 +113,7 @@
 				7CA260EB263CA11E00494776 /* SceneDelegate.swift */,
 				7CF623C9263E5913007CE865 /* Model */,
 				7C0615F3264C62DD0068076D /* Views */,
+				7C40C2F027E305B30045A79E /* New Group */,
 				7CA260EF263CA11F00494776 /* Assets.xcassets */,
 				7CA260F4263CA11F00494776 /* LaunchScreen.storyboard */,
 				7CA260F7263CA11F00494776 /* Info.plist */,
@@ -202,9 +216,11 @@
 				7CA260EA263CA11E00494776 /* AppDelegate.swift in Sources */,
 				7CDBED162712B0E200ADE785 /* ArticleListView.swift in Sources */,
 				7CDBED0C2711596F00ADE785 /* HomeArticleCell.swift in Sources */,
+				7C575BBC27B0E99400C5BC11 /* ArticleCardViewBasic.swift in Sources */,
 				7CF623C8263E58BD007CE865 /* Article .swift in Sources */,
 				7CA260EC263CA11E00494776 /* SceneDelegate.swift in Sources */,
 				7CDBED102712559800ADE785 /* CategoryPageView.swift in Sources */,
+				7C40C2F227E3064E0045A79E /* EventScrollView.swift in Sources */,
 				7CDBED1227125B8D00ADE785 /* TopHeaderView.swift in Sources */,
 				7C22ED1B26472D95003D8014 /* ArticleDetailView.swift in Sources */,
 				7CA260EE263CA11E00494776 /* ContentView.swift in Sources */,
@@ -355,7 +371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = B.Noos2;
+				PRODUCT_BUNDLE_IDENTIFIER = B.Noos2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = B.Noos2;
+				PRODUCT_BUNDLE_IDENTIFIER = B.Noos2.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
