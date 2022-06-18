@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct CategoryPageView: View {
+    
+    
+    
     var body: some View {
-        Text("List Of Categories")
+        ScrollView {
+            VStack {
+                Text("Browse Categories")
+                
+                ForEach(0..<20) { index in
+                    Text("Categoru Name")
+                        .padding()
+                    ScrollView(.horizontal, showsIndicators: false, content:  {
+                        Divider()
+                        HStack {
+                            ForEach(0..<10) { index in
+                                
+                                RoundedRectangle(cornerRadius: 25.0)
+                                    .frame(width: 200, height: 200)
+                                    .shadow(radius: 10)
+                                    .padding()
+                            }
+                        }
+                    })
+                }
+                
+            }
+        }
     }
 }
 

@@ -10,14 +10,14 @@ import SwiftUI
 struct FeedCell_: View {
     var body: some View {
         ZStack {
-            Color.gray
+//            Color.gray
             Image("studying")
                 .resizable()
-                .frame(width: 300, height: 300, alignment: .center)
+                .frame(width: 30, height: 300, alignment: .center)
                 .background(Color.red)
                 .cornerRadius(20)
             Image(systemName: "flag.fill")
-                .position(x: 60, y: 500)
+//                .position(x: 60, y: 500)
                 .foregroundColor(.red)
             
             Image(systemName: "heart.fill")
@@ -25,6 +25,24 @@ struct FeedCell_: View {
                 .foregroundColor(.gray)
                 
         }
+        
+        VStack(alignment: .leading) {
+            Image("studying")
+                .resizable()
+                .frame(width: 300, height: 300)
+                .background(Color.red)
+                .cornerRadius(20)
+            
+                    Text("Design")
+                        .font(.headline)
+//                    Spacer()
+                    HStack {
+                        Label("2", systemImage: "person")
+                        Spacer()
+                        Label("00:00", systemImage: "clock")
+                    }
+                }
+            .padding()
     }
 }
 
