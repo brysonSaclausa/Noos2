@@ -14,17 +14,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
                 TabView {
-                    
-//                        TopHeaderView()
-                        HomeListArticleView()
-                            .tabItem {
-                                Image(systemName: "house")
-                                Text("Home")
-                            }
-                    
-                    
+                    CategoryPageView()
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("Home")
+                        }
                     
                     EventMapView()
                         .tabItem {
@@ -32,12 +27,6 @@ struct ContentView: View {
                             Text("Events")
                         }
                     
-                    CategoryPageView()
-                        .tabItem {
-                            Image(systemName: "list.star")
-                            Text("Categories")
-                        }
-                   
                     ShopView()
                         .tabItem {
                             Image(systemName: "bag")
@@ -46,7 +35,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Noos")
-            //            .navigationBarTitleDisplayMode(.inline)
+            //                        .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
             
         }

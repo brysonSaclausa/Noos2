@@ -9,16 +9,19 @@ import SwiftUI
 
 struct CategoryPageView: View {
     
-    
-    
     var body: some View {
         ScrollView {
+            Text("Featured")
+                .padding()
+                .font(.title)
             VStack {
-                Text("Browse Categories")
                 
+                TopHeaderView()
                 ForEach(0..<20) { index in
-                    Text("Categoru Name")
+                    
+                    Text("Category Name")
                         .padding()
+                    
                     ScrollView(.horizontal, showsIndicators: false, content:  {
                         Divider()
                         HStack {

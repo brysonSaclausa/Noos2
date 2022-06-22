@@ -12,10 +12,7 @@ struct HomeListArticleView: View {
     var body: some View {
         VStack {
             
-            //                TopHeaderView()
-            //Hello Werld
             ArticleListView1()
-            
             
         }
     }
