@@ -11,30 +11,26 @@ struct CategoryPageView: View {
     
     var body: some View {
         ScrollView {
-            Text("Featured")
-                .padding()
-                .font(.title)
             VStack {
-                
                 TopHeaderView()
+//                Text("CATEGORIES")
+//                ArticleListView1()
                 ForEach(0..<20) { index in
-                    
+
                     Text("Category Name")
-                        .padding()
-                    
-                    ScrollView(.horizontal, showsIndicators: false, content:  {
-                        Divider()
-                        HStack {
-                            ForEach(0..<10) { index in
-                                
-                                RoundedRectangle(cornerRadius: 25.0)
-                                    .frame(width: 200, height: 200)
-                                    .shadow(radius: 10)
-                                    .padding()
-                            }
-                        }
-                    })
+                        .frame(alignment: .leading)
+                        .position(x: 80, y: 12)
+
+                    VStack {
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .frame(width: 200, height: 150)
+                            .shadow(radius: 10)
+                            .padding()
+                        Text("Hello, earth to Noosapp")
+
+                    }
                 }
+                
                 
             }
         }
