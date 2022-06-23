@@ -12,7 +12,23 @@ struct FeaturedArticleCardView: View {
     let article: Article
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack(alignment: .leading) {
+            Image("break4")
+                .resizable()
+                .frame(width: .infinity, height: 300)
+            
+            Text(article.title)
+                .font(.largeTitle)
+                .foregroundColor(Color.white)
+                .offset(x: 5, y: 100)
+                //                .frame(alignment: .bottomLeading)
+//                .position(x: 130, y: 500)
+            
+            
+        }
+        
+        
     }
 }
 

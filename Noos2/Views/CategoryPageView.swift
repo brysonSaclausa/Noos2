@@ -9,36 +9,48 @@ import SwiftUI
 
 struct CategoryPageView: View {
     
+    var article: Article
+    
     var body: some View {
         ScrollView {
             VStack {
-                TopHeaderView()
+                Text("FEATURED")
+                    .font(.headline)
+                FeaturedArticleCardView(article: article)
+             
 //                Text("CATEGORIES")
 //                ArticleListView1()
-                ForEach(0..<20) { index in
+                ForEach(0..<2) { index in
 
-                    Text("Category Name")
-                        .frame(alignment: .leading)
-                        .position(x: 80, y: 12)
+//                    Text("Category Name")
+//                        .frame(alignment: .leading)
+//                        .position(x: 80, y: 12)
 
                     VStack {
-                        RoundedRectangle(cornerRadius: 25.0)
-                            .frame(width: 300, height: 120)
+                        Text(article.title)
+                            .frame(width: 350, alignment: .leading)
+                        RoundedRectangle(cornerRadius: 15.0)
+                            .frame(width: 350, height: 90)
                             .shadow(radius: 10)
-                            .padding()
-                        Text("Hello, earth to Noosapp")
+//                            .padding()
+                        
 
                     }
-                }
+                }//
+                Divider()
+                Text("Most Popular")
+                    .font(.headline)
                 
                 
             }
+            
+            
         }
     }
 }
 
 struct CategoryPageView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryPageView()
+        CategoryPageView(article: ArticleList.articleList[0])
     }
 }

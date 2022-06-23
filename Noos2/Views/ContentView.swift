@@ -15,10 +15,16 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 TabView {
-                    CategoryPageView()
+                    CategoryPageView(article: articles[0])
                         .tabItem {
                             Image(systemName: "star")
                             Text("Discover")
+                        }
+                    
+                    ShopView()
+                        .tabItem {
+                            Image(systemName: "list.bullet")
+                            Text("Categories")
                         }
                     
                     EventMapView()
@@ -27,11 +33,7 @@ struct ContentView: View {
                             Text("Events")
                         }
                     
-                    ShopView()
-                        .tabItem {
-                            Image(systemName: "bag")
-                            Text("Shop")
-                        }
+                    
                 }
             }
             .navigationTitle("Noos")
