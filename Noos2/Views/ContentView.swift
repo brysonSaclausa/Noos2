@@ -17,8 +17,8 @@ struct ContentView: View {
                 TabView {
                     CategoryPageView()
                         .tabItem {
-                            Image(systemName: "house")
-                            Text("Home")
+                            Image(systemName: "star")
+                            Text("Discover")
                         }
                     
                     EventMapView()

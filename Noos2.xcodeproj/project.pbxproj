@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C101F73286400CA003B621D /* FeaturedArticleTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C101F72286400CA003B621D /* FeaturedArticleTopView.swift */; };
+		7C101F7528640A93003B621D /* FeaturedArticleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C101F7428640A93003B621D /* FeaturedArticleCardView.swift */; };
 		7C22ED1B26472D95003D8014 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C22ED1A26472D95003D8014 /* ArticleDetailView.swift */; };
 		7C40C2F227E3064E0045A79E /* EventScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40C2F127E3064E0045A79E /* EventScrollView.swift */; };
 		7C575BBC27B0E99400C5BC11 /* ArticleCardViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C101F72286400CA003B621D /* FeaturedArticleTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedArticleTopView.swift; sourceTree = "<group>"; };
+		7C101F7428640A93003B621D /* FeaturedArticleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedArticleCardView.swift; sourceTree = "<group>"; };
 		7C22ED1A26472D95003D8014 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		7C40C2F127E3064E0045A79E /* EventScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScrollView.swift; sourceTree = "<group>"; };
 		7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCardViewBasic.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				7C575BBB27B0E99400C5BC11 /* ArticleCardViewBasic.swift */,
 				7CDBED152712B0E200ADE785 /* ArticleListView.swift */,
 				7CDBED132712A17E00ADE785 /* SectionBarView.swift */,
+				7C101F72286400CA003B621D /* FeaturedArticleTopView.swift */,
+				7C101F7428640A93003B621D /* FeaturedArticleCardView.swift */,
 				7CDBED0F2712559800ADE785 /* CategoryPageView.swift */,
 				7CDBED092711549600ADE785 /* EventMapView.swift */,
 				7CDBED172712B69800ADE785 /* ShopView.swift */,
@@ -216,6 +222,8 @@
 				7CA260EA263CA11E00494776 /* AppDelegate.swift in Sources */,
 				7CDBED162712B0E200ADE785 /* ArticleListView.swift in Sources */,
 				7CDBED0C2711596F00ADE785 /* HomeArticleCell.swift in Sources */,
+				7C101F73286400CA003B621D /* FeaturedArticleTopView.swift in Sources */,
+				7C101F7528640A93003B621D /* FeaturedArticleCardView.swift in Sources */,
 				7C575BBC27B0E99400C5BC11 /* ArticleCardViewBasic.swift in Sources */,
 				7CF623C8263E58BD007CE865 /* Article .swift in Sources */,
 				7CA260EC263CA11E00494776 /* SceneDelegate.swift in Sources */,

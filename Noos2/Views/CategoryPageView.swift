@@ -23,7 +23,7 @@ struct CategoryPageView: View {
 
                     VStack {
                         RoundedRectangle(cornerRadius: 25.0)
-                            .frame(width: 200, height: 150)
+                            .frame(width: 300, height: 120)
                             .shadow(radius: 10)
                             .padding()
                         Text("Hello, earth to Noosapp")

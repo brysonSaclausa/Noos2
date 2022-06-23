@@ -7,9 +7,26 @@
 
 import SwiftUI
 
+struct Ocean: Identifiable {
+    let name: String
+    let id = UUID()
+}
+
+private var oceans = [
+    Ocean(name: "Pacific"),
+    Ocean(name: "Atlantic"),
+    Ocean(name: "Indian"),
+    Ocean(name: "Southern"),
+    Ocean(name: "Arctic")
+]
+
+
 struct ShopView: View {
     var body: some View {
-        Text("Coming Soon!")
+        List(oceans) {
+            Text($0.name)
+        }
+        .listStyle(.plain)
     }
 }
 
@@ -18,3 +35,6 @@ struct ShopView_Previews: PreviewProvider {
         ShopView()
     }
 }
+
+
+

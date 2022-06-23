@@ -31,7 +31,7 @@ struct TopHeaderView: View {
                         
                         HStack {
                             ForEach(0..<3) { index in
-                                FeedCell_()
+                                ArticleCardViewBasic()
 //                                RoundedRectangle(cornerRadius: 25.0)
 //                                    .frame(width: 200, height: 200)
 //                                    .shadow(radius: 10)
