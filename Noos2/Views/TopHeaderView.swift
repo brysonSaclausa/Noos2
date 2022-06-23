@@ -22,10 +22,14 @@ struct TopHeaderView: View {
 //                        .scaledToFill()
 //                        .frame(height: 100)
 //                        .ignoresSafeArea()
-                    Text("FEATURED")
-                            .lineLimit(3)
-                            .frame(width: 330, height: 70)
-                        .offset(y: 10)
+                    HStack {
+                        Text("LEARN")
+                                .lineLimit(3)
+                                .frame(width: 330, height: 70)
+                            .offset(y: 10)
+                        
+                        
+                    }
                     
                     ScrollView(.horizontal) {
                         
@@ -39,6 +43,8 @@ struct TopHeaderView: View {
                             }
                         }
                     }
+                    
+                    
                 }
 //                Divider()
                 
@@ -47,6 +53,7 @@ struct TopHeaderView: View {
             
         }
     }
+        
 }
 
 struct TopHeaderView_Previews: PreviewProvider {

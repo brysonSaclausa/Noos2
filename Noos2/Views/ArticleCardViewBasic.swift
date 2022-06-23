@@ -11,14 +11,14 @@ struct ArticleCardViewBasic: View {
     var body: some View {
        
             VStack() {
-                Image(systemName: "pencil")
+                Image(systemName: "book.circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 120, height: 120)
-//                    .cornerRadius(30)
-                    .background(Color.green)
-                Text("HelloWerld, Im an Article, Hello Werld, Im an ArticleHelloWerld, IHello ")
-                    .frame(width: 120, height: 80)
+                    .frame(width: 130, height: 130)
+                    .cornerRadius(90)
+//                    .background(Color.gray)
+                Text("Level")
+                    .frame(width: 120, height: 30)
                     .multilineTextAlignment(.leading)
                     .lineLimit(.none)
                     

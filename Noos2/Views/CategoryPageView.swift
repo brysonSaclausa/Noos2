@@ -15,37 +15,66 @@ struct CategoryPageView: View {
         ScrollView {
             VStack {
                 Text("FEATURED")
-                    .font(.headline)
                 FeaturedArticleCardView(article: article)
              
 //                Text("CATEGORIES")
 //                ArticleListView1()
-                ForEach(0..<2) { index in
+                ForEach(0..<1) { index in
 
 //                    Text("Category Name")
 //                        .frame(alignment: .leading)
 //                        .position(x: 80, y: 12)
-
-                    VStack {
-                        Text(article.title)
-                            .frame(width: 350, alignment: .leading)
-                        RoundedRectangle(cornerRadius: 15.0)
+                    Spacer()
+                    ZStack() {
+                        RoundedRectangle(cornerRadius: 10.0)
                             .frame(width: 350, height: 90)
                             .shadow(radius: 10)
 //                            .padding()
                         
+                        Text(article.title)
+                            .frame(width: 320, alignment: .leading)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                        
 
                     }
+                    
                 }//
                 Divider()
-                Text("Most Popular")
-                    .font(.headline)
+                HStack {
+                    Text("LATEST NOOS")
+                        .font(.headline)
+                    Spacer()
+                    Image(systemName: "line.3.horizontal.decrease.circle")
+                        
+                }.padding()
                 
+                
+                FeedCell_()
+               
+                
+                Divider()
+                
+                TopHeaderView()
+                
+                HStack {
+                    Text("POPULAR NOOS")
+                        .font(.headline)
+                    Spacer()
+                    Image(systemName: "line.3.horizontal.decrease.circle")
+                        
+                }.padding()
+                
+                FeedCell_()
                 
             }
             
             
+            
         }
+        
     }
 }
 
