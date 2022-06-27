@@ -15,18 +15,13 @@ struct TopHeaderView: View {
             //                .padding()
             
                 VStack {
-//                    //need to fix
-//                    Image("break1")
-//                        .resizable()
-//                    //                        .cornerRadius(10)
-//                        .scaledToFill()
-//                        .frame(height: 100)
-//                        .ignoresSafeArea()
+
                     HStack {
                         Text("LEARN")
                                 .lineLimit(3)
                                 .frame(width: 330, height: 70)
                             .offset(y: 10)
+                            .font(.largeTitle)
                         
                         
                     }
