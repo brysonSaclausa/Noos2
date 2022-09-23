@@ -36,10 +36,10 @@ struct ArticleList {
                 authorName: "Admin",
                 category: "Event", image: "break5"),
         
-        Article(title: "The Ultimate Guide to SwiftUI",
+        Article(title: "How To Use GraphQL In Your iOS App",
                 bodyText: loremIpsum,
                 viewCount: 21,
-                publishDate: "May 5, 2021",
+                publishDate: "May 10, 2021",
                 authorName: "Admin",
                 category: "Event", image: "break6"),
         

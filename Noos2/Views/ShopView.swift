@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct Ocean: Identifiable {
+struct Category: Identifiable {
     let name: String
     let id = UUID()
 }
 
-private var oceans = [
-    Ocean(name: "Pacific"),
-    Ocean(name: "Atlantic"),
-    Ocean(name: "Indian"),
-    Ocean(name: "Southern"),
-    Ocean(name: "Arctic")
+private var categories = [
+    Category(name: "Features"),
+    Category(name: "Music"),
+    Category(name: "Fashion"),
+    Category(name: "Events"),
+    Category(name: "Battles")
 ]
 
 
 struct ShopView: View {
     var body: some View {
-        List(oceans) {
+        List(categories) {
             Text($0.name)
         }
         .listStyle(.plain)
