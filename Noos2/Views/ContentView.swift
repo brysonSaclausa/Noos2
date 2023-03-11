@@ -15,6 +15,13 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 TabView {
+                    
+                    EventMapView()
+                        .tabItem {
+                            Image(systemName: "map")
+                            Text("Events")
+                        }
+                    
                     CategoryPageView(article: articles[0])
                         .tabItem {
                             Image(systemName: "star")
@@ -27,16 +34,12 @@ struct ContentView: View {
                             Text("Categories")
                         }
                     
-                    EventMapView()
-                        .tabItem {
-                            Image(systemName: "map")
-                            Text("Events")
-                        }
+                    
                     
                     
                 }
             }
-            .navigationTitle("Noos")
+            .navigationTitle("Breakapp")
             //                        .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Image(systemName: "person"))
             

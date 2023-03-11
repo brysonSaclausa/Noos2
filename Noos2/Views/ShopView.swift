@@ -24,6 +24,7 @@ private var categories = [
 struct ShopView: View {
     var body: some View {
         List(categories) {
+
             Text($0.name)
         }
         .listStyle(.plain)
